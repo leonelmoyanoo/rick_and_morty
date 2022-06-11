@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Primary module of Rick And Morty API.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function rick_and_morty_theme()
+{
+  return [
+    'rick_and_morty' => [
+      'variables' => [
+        'characters' => NULL,
+      ],
+      'render element' => 'page',
+    ]
+  ];
+}

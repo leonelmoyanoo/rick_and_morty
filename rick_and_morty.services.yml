@@ -1,0 +1,4 @@
+services:
+  rick_and_morty.RickAndMortyService:
+    class: Drupal\rick_and_morty\Service\RickAndMortyService
+    arguments: ['@http_client_factory','@language_manager']

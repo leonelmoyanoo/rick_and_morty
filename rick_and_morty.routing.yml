@@ -1,0 +1,7 @@
+rick_and_morty.RickAndMorty:
+  path: '/RickAndMorty'
+  defaults:
+    _controller: '\Drupal\rick_and_morty\Controller\RickAndMortyController::myPage'
+    _title: 'Rick And Morty Collector'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,23 @@
+<div class="images__card descriptionOut">
+    <img src="{{ character.image }}" class="images__card--character rotateIn" id="image__{{ character.id }}"
+        alt="Image 1" onclick="hide({{ character.id }})">
+    <div class="images__card--mainDescription rotateIn" id="description__{{ character.id }}">
+        <p class="images__card--mainDescription--name">Name: {{ character.name }}</p>
+        <p class="images__card--mainDescription--universe">Location: {{ character.location.name }}</p>
+    </div>
+    <div class="images__card--allData rotateOut" onclick="show({{ character.id }})" id="allData__{{ character.id }}">
+        <p class="images__card--allData--name">Name: {{ character.name }}</p>
+        <p class="images__card--allData--status">Status: {{ character.status }}</p>
+        <p class="images__card--allData--specie">Specie: {{ character.species }}</p>
+        <p class="images__card--allData--type">Type: {{ character.type }}</p>
+        <p class="images__card--allData--gender">Gender: {{ character.gender }}</p>
+        <p class="images__card--allData--origin">Origin: {{ character.origin.name }}</p>
+        <p class="images__card--allData--location">Location: {{ character.location.name }}</p>
+        <div class="images__card--allData--origin">
+            <h2 class="images__card--allData--origin--title">First chapter</h2>
+            <p class="images__card--allData--origin--chapter">Chapter: {{ character.chapter_origin.episode }}</p>
+            <p class="images__card--allData--origin--name">Chapter Name: {{ character.chapter_origin.name }}</p>
+            <p class="images__card--allData--origin--date">Chapter date: {{ character.chapter_origin.air_date }}</p>
+        </div>
+    </div>
+</div>
