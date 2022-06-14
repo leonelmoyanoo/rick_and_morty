@@ -1,0 +1,6 @@
+rick_and_morty.rick_and_morty_index:
+  title: 'Rick and Morty'
+  parent: system.menu.main
+  menu_name: main
+  description: 'Rick and Morty random images'
+  route_name: rick_and_morty.RickAndMorty
