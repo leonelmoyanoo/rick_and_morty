@@ -43,11 +43,14 @@
  */
 #}
 
-      {% include "/modules/custom/rick_and_morty/templates/styles.html.twig" %}
 <div class="layout-container">
 
   <header role="banner">
     {{ page.header }}
+    {# You can reuse another design from another project ;) #}
+      {# <link rel="stylesheet" href="https://leonelmoyanoo.github.io/RickAndMortyAPI/css/styles.css"> #}
+    {# Or make your own design in  web/modules/custom/rick_and_morty/templates/styles.html.twig #}
+      {% include "/modules/custom/rick_and_morty/templates/styles.html.twig" %}
   </header>
 
   {{ page.primary_menu }}
