@@ -1,0 +1,10 @@
+rick_and_morty:
+  version: 1.x
+  css:
+    component:
+      css/efects.css: {}
+      css/images_cards.css: {}
+  js:
+    js/functions.js: {}
+  dependencies:
+    - core/drupal

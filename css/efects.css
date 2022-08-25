@@ -1,0 +1,13 @@
+
+/* EFECTS */
+.rotateOut {
+    transform: rotateY(180deg);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.rotateIn {
+    transform: rotateY(0deg);
+    visibility: visible;
+    opacity: 1;
+}

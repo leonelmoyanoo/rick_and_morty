@@ -1,11 +1,11 @@
 <div class="images__card descriptionOut">
     <img src="{{ character.image }}" class="images__card--character rotateIn" id="image__{{ character.id }}"
-        alt="Image 1" onclick="hide({{ character.id }})"  title="Click on me">
+        alt="Image 1" onClick="hide({{ character.id }})"  title="Click on me">
     <div class="images__card--mainDescription rotateIn" id="description__{{ character.id }}">
         <p class="images__card--mainDescription--name">Name: {{ character.name }}</p>
         <p class="images__card--mainDescription--universe">Location: {{ character.location.name }}</p>
     </div>
-    <div class="images__card--allData rotateOut" onclick="show({{ character.id }})" id="allData__{{ character.id }}">
+    <div class="images__card--allData rotateOut" onClick="show({{ character.id }})" id="allData__{{ character.id }}">
         <p class="images__card--allData--name">Name: {{ character.name }}</p>
         <p class="images__card--allData--status">Status: {{ character.status }}</p>
         <p class="images__card--allData--specie">Specie: {{ character.species }}</p>

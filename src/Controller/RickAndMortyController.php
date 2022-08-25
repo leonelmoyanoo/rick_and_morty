@@ -30,11 +30,15 @@ class RickAndMortyController extends ControllerBase
   public function myPage()
   {
     $get = '/api/character/[';
+
     for ($i = 0; $i < 5; $i++) {
       $get .= random_int(0, 671) . ',';
     }
+
     $get .= random_int(0, 671) . ']';
+    // Make the request.
     $characters = $this->rickAndMortyService->request($get);
+
     foreach ($characters as $key => $value) {
       $url = explode('https://rickandmortyapi.com', $value['episode'][0]);
       $get = $url[1];
@@ -43,6 +47,11 @@ class RickAndMortyController extends ControllerBase
     }
     return [
       '#theme' => 'rick_and_morty',
+      '#attached' => [
+        'library' => [
+          'rick_and_morty/rick_and_morty'
+        ]
+      ],
       '#characters' => $characters,
     ];
   }
